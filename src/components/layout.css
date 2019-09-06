@@ -1,0 +1,16 @@
+.default-background {
+  min-height: 100vh;
+}
+
+.button-yellow{
+  color: yellow
+  
+}
+
+.cart-icon {
+  color: red;
+}
+
+.footer{
+  background: darkgrey
+}
