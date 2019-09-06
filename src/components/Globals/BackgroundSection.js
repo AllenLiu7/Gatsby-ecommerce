@@ -5,12 +5,13 @@ export default function BackgroundSection({ title, imagedata, className }) {
   return (
     <BackgroundImage
       Tag="section"
-      className="default-background"
-      fluid={imagedata}
-    >
-      <h1 className="text-white text-center display-4 font-weight-bold mt-10rem">
+      className={className}
+      //the title position inside background image must ajust here
+      fluid={imagedata}>
+      <h1 className="title text-white display-4 font-weight-bold">
         {title}
       </h1>
+      
     </BackgroundImage>
   )
 }
