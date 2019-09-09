@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/info"
+import Menu from "../components/menu"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = ({ data }) => (
       className={"default-background"}
     />
     <Info />
+    <Menu item={data.menu} />
   </Layout>
 )
 
@@ -23,6 +25,21 @@ export const qurey = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    menu: allContentfulCoffeeitem {
+      edges {
+        node {
+          title
+          description
+          price
+          category
+          image {
+            fixed(width: 50, height: 50) {
+              ...GatsbyContentfulFixed
+            }
+          }
         }
       }
     }
