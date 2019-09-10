@@ -31,6 +31,7 @@ export const qurey = graphql`
     menu: allContentfulCoffeeitem {
       edges {
         node {
+          id
           title
           description
           price
