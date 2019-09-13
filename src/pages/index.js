@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/info"
 import Menu from "../components/menu"
+import Product from "../components/product"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = ({ data }) => (
     />
     <Info />
     <Menu item={data.menu} />
+    <Product item={data.product} />
   </Layout>
 )
 
@@ -39,6 +41,20 @@ export const qurey = graphql`
           image {
             fixed(width: 50, height: 50) {
               ...GatsbyContentfulFixed
+            }
+          }
+        }
+      }
+    }
+    product: allContentfulProductforsell {
+      edges {
+        node {
+          title
+          description
+          price
+          image {
+            fluid(maxHeight: 300, maxWidth: 500) {
+              ...GatsbyContentfulFluid
             }
           }
         }
