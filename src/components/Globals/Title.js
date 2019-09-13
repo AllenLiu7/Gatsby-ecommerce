@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react"
 
-const Title = ({title}) => {
-    return ( 
-        <div className="row"><div className="div col text-center my-3"><h1>{title}</h1></div></div>
-     );
+const Title = ({ title }) => {
+  return (
+    <div className="row">
+      <div className="div col text-center my-5">
+        <h1>{title}</h1>
+      </div>
+    </div>
+  )
 }
- 
-export default Title;
+
+export default Title

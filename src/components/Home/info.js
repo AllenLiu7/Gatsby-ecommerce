@@ -18,7 +18,9 @@ const Info = () => {
               atque quasi voluptas. Nisi laboriosam nam itaque?
             </p>
             <Link to="/about">
-              <button className="btn btn-outline-warning mb-5">About</button>
+              <button className="btn btn-outline-warning mb-5 my-4">
+                About
+              </button>
             </Link>
           </div>
           ={" "}

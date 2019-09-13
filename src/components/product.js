@@ -8,7 +8,7 @@ export default function Product(props) {
     <section className="py-5">
       <div className="container">
         <Title title={"Our Products"} />
-        <div className="row justify-content-center">
+        <div className="row justify-content-center ">
           {props.item.edges.map(({ node }) => {
             return <Productcard key={node.id} node={node} />
           })}

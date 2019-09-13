@@ -6,6 +6,7 @@ import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/info"
 import Menu from "../components/menu"
 import Product from "../components/product"
+import Contact from "../components/contact"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = ({ data }) => (
     <Info />
     <Menu item={data.menu} />
     <Product item={data.product} />
+    <Contact />
   </Layout>
 )
 
