@@ -28,6 +28,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,6 +39,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey: process.env.SNIPCART_KEY,
+        autopop: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
