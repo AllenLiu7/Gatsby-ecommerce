@@ -51,6 +51,7 @@ export const qurey = graphql`
     product: allContentfulProductforsell {
       edges {
         node {
+          id
           title
           description
           price

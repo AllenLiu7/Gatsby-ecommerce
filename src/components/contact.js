@@ -10,7 +10,7 @@ export default function Contact() {
           <form>
             {/* can use formspree service to manage the submission */}
             <div className="form-group">
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 className="form-control"
@@ -19,7 +19,7 @@ export default function Contact() {
               />
             </div>
             <div className="form-group">
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="text"
                 className="form-control"
@@ -28,15 +28,15 @@ export default function Contact() {
               />
             </div>
             <div className="form-group">
-              <label for="description">description</label>
+              <label htmlFor="description">description</label>
               <textarea
-                class="form-control"
+                className="form-control"
                 id="description"
                 placeholder="Write down your question"
                 rows="3"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-warning btn-block">
+            <button type="submit" className="btn btn-warning btn-block">
               Submit
             </button>
           </form>
