@@ -56,6 +56,7 @@ export const qurey = graphql`
           price
           image {
             fluid(maxHeight: 300, maxWidth: 500) {
+              src
               ...GatsbyContentfulFluid
             }
           }

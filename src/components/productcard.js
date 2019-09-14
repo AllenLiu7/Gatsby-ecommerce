@@ -12,7 +12,14 @@ export default function Productcard(props) {
           <h6 className="card-title">{props.node.title}</h6>
           <h6 className="h6 card-text">${props.node.price}</h6>
 
-          <button className="btn btn-warning text-capitalize">
+          <button
+            className="btn btn-warning text-capitalize snipcart-add-item"
+            data-item-id={props.node.id}
+            data-item-name={props.node.title}
+            data-item-price={props.node.price}
+            data-item-url="https://gatsby-shop-prac.netlify.com/"
+            data-item-image={props.node.image.fluid.src}
+          >
             Add To Cart
           </button>
         </div>
