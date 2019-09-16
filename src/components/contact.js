@@ -3,7 +3,7 @@ import Title from "../components/Globals/Title"
 
 export default function Contact() {
   return (
-    <section className="pb-5">
+    <section className="pb-5 contact">
       <Title title={"Contact Us"} />
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-8 col-9 mx-auto">

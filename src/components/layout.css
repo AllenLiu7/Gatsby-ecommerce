@@ -1,27 +1,63 @@
+:root {
+  --mainBrown: #2d1ef1;
+  --mainYellow: rgb(255, 158, 9);
+  --mainGrey: #ece8dc;
+  --mainWhite: #fff;
+  --mainDark: #222;
+}
+
+body {
+  color: var(--mainDark);
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.05rem;
+}
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
 .default-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+
+  background-position: center;
+  background-size: cover;
 }
 
-.about-background{
+.about-background {
   min-height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
+.menu {
+  background-color: var(--mainGrey);
+}
 
-.button-yellow{
-  color: yellow
-  
+.contact {
+  background-color: var(--mainGrey);
+}
+
+.button-yellow {
+  color: yellow;
 }
 
 .cart-icon {
-  color: red;
+  color: var(--mainYellow);
+  cursor: pointer;
 }
 
-.footer{
-  background: darkgrey
+.footer {
+  background: var(--mainDark);
 }

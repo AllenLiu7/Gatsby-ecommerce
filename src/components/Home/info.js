@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 
 const Info = () => {
   return (
-    <section>
-      <div className="container">
+    <section className="py-6">
+      <div className="container ">
         <div className="row">
-          <div className="col text-center ">
+          <div className="col text-center">
             <Title title="Our Story" />
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -23,7 +23,6 @@ const Info = () => {
               </button>
             </Link>
           </div>
-          ={" "}
         </div>
       </div>
     </section>

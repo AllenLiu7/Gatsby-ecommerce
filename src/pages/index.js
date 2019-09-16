@@ -14,7 +14,8 @@ const IndexPage = ({ data }) => (
     <BackgroundSection
       imagedata={data.img.childImageSharp.fluid}
       title={"Regular Joe's"}
-      className={"default-background"}
+      className={"default-background text-center"}
+      // here it is trick to add text-center plus the align-item center to make the title center.
     />
     <Info />
     <Menu item={data.menu} />

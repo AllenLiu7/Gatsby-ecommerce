@@ -39,7 +39,7 @@ export default class Menu extends Component {
   render() {
     console.log(this.state.item)
     return (
-      <section className="menu">
+      <section className="menu py-5">
         <Title title="Our Menu" />
         <div className="container">
           <div className="row mb-5">
