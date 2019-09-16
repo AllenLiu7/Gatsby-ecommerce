@@ -63,10 +63,7 @@ export default class Menu extends Component {
           <div className="row">
             {this.state.coffeeitem.map(({ node }) => {
               return (
-                <div
-                  key={node.id}
-                  className="col-10 col-md-6 py-3 d-flex mx-auto"
-                >
+                <div key={node.id} className="col-10 col-md-6 py-3 d-flex ">
                   <div>
                     <Img fixed={node.image.fixed} />
                   </div>
