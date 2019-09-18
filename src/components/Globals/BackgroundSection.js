@@ -6,7 +6,7 @@ export default function BackgroundSection({ title, imagedata, className }) {
 
   const backgroundFluidImageStack = [
     image,
-    `linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5))`,
+    `linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5))`,
   ].reverse()
 
   return (

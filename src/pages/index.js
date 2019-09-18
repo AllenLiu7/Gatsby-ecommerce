@@ -7,16 +7,18 @@ import Info from "../components/Home/info"
 import Menu from "../components/menu"
 import Product from "../components/product"
 import Contact from "../components/contact"
+import VideoBack from "../components/Globals/videoBackground"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <BackgroundSection
+    <VideoBack></VideoBack>
+    {/* <BackgroundSection
       imagedata={data.img.childImageSharp.fluid}
       title={"Regular Joe's"}
       className={"default-background text-center"}
       // here it is trick to add text-center plus the align-item center to make the title center.
-    />
+    /> */}
     <Info />
     <Menu item={data.menu} />
     <Product item={data.product} />
