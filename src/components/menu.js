@@ -8,7 +8,7 @@ const getCategory = items => {
     //map the edges to make an array of categories. It used to be array of node.
   })
   let category = Array.from(new Set(tempCategory))
-  //use Set to select the distinct item in the array, then them back to an array
+  //use Set() to create an array without repeated items.
   category = ["All", ...category]
   //add "All" to the array.
   return category
